@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/lab5.css">
+    <title>Lab2</title>
+</head>
+
+<body>
+<div class="main-container">
+    <div class="container-1">
+        <h1>Японія</h1>
+        <div id="firstDiv" class="cont-cont1" onclick="changeContent()">Технології вперед!</div>
+    </div>
+    <div class="container-2"></div>
+    <div class="container-3" id="c2"></div>
+    <div class="container-4">
+
+        <div class="find_area_container">
+            <span class="task-number">Task2</span>
+            <label for="firstValue">Введіть сторону паралелограма</label>
+            <input id="firstValue" maxlength="3" value="2">
+            <label for="secondValue">Введіть висоту паралелограма</label>
+            <input id="secondValue" maxlength="3" value="2">
+
+            <button onclick="findArea()">Calculate</button>
+            <span class="resultOfCalculating" id="area-result"></span>
+        </div>
+
+        <div class="find_words_number">
+            <span class="task-number">Task3</span>
+            <label for="text">Введіть потрібний текст</label>
+            <textarea id="text"></textarea>
+
+            <button onclick="findWordsNumber()">Calculate</button>
+        </div>
+
+        <div class="change_color">
+            <span class="task-number">Task4</span>
+            <label for="color">Введіть потрібний колір</label>
+            <input id="color" maxlength="20" value="red">
+
+            <button onclick="changeColor()">Change color</button>
+        </div>
+
+        <div class="change_color">
+            <span class="task-number">Task5</span>
+            <ul>
+                <li onclick="changeImage('container-1')">1 Контейнер</li>
+                <li onclick="changeImage('container-2')">2 Контейнер</li>
+                <li onclick="changeImage('container-3')">3 Контейнер</li>
+                <li onclick="changeImage('container-4')">4 Контейнер</li>
+                <li onclick="changeImage('container-5')">5 Контейнер</li>
+                <li onclick="changeImage('container-6')">6 Контейнер</li>
+            </ul>
+
+            <div id="entering_url" style="display:none">
+                <label id="enter_url" for="change-image">Введіть посилання</label>
+                <input id="change-image" maxlength="100" placeholder="Не варто">
+
+                <button onclick="saveImage()">Save image</button>
+                <button onclick="deleteImage()">Delete image</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-5">
+        <div id="secondDiv" class="cont-cont1" onclick="changeContent()">Самурайський дух</div>
+        <p class="p-div">
+            Японія відома своєю давньою культурою, яка поєднує традиції самураїв, чайних церемоній і гейш.
+        </p>
+    </div>
+    <div class="container-6">
+        <div class="second-header-list-container">
+            <h2>Традиційна кухня</h2>
+            <ul>
+                <li>Суші</li>
+                <li>Рамен</li>
+                <li>Окономіякі</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="../index.js"></script>
+</html>
